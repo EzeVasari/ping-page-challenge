@@ -25,6 +25,8 @@ html {
 body {
     margin: 0;
     overflow-x: hidden;
+    font-family: var(--font-family);
+    font-smooth: always;
 }
 
 main {
@@ -34,7 +36,15 @@ main {
     color: var(--dark-blue);
 }
 
+.logo {
+    margin-top: 2rem;
+    width: 20%;
+}
+
 .title {
+    margin-top: 1.7rem;
+    margin-bottom: 0;
+    font-size: 1.1rem;
     color: var(--gray);
 }
 
@@ -42,4 +52,113 @@ main {
     color: var(--dark-blue);
     font-weight: 600;
 }
+
+.subtitle {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: .65rem;
+}
+
+input {
+    width: 90%;
+    padding: .6rem;
+    padding-left: 1rem;
+    color: black;
+    font-size: .6rem;
+    font-family: var(--font-family);
+    outline: none;
+    border: 1px solid var(--pale-blue);
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+input::placeholder {
+    color: var(--pale-blue);
+    font-size: .6rem;
+    font-family: var(--font-family);
+}
+
+.border-error {
+    border: 1px solid var(--light-red);
+}
+
+.text-error {
+    margin-top: .3rem;
+    font-size: .5rem;
+    font-weight: 600;
+    color: var(--light-red);
+}
+
+.none {
+    display: none;
+}
+
+.btn-input {
+    width: 90%;
+    margin-top: .5rem;
+    padding: .6rem;
+    background-color: var(--blue);
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-size: .6rem;
+    font-weight: 600;
+    box-shadow: 0px 8px 10px rgba(79, 125, 243, 0.2);
+    border: none;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.illustration {
+    margin-top: 3.5rem;
+}
+
+.img-illustration {
+    width: 100%;
+}
+
+.rrss {
+    display: flex;
+    justify-content: center;
+    margin-top: 3.5rem;
+    
+}
+
+.rrss div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    flex: 1 1 1;
+    border: 1px solid var(--pale-blue);
+    margin: .5rem;
+    color: var(--blue);
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.rrss div:hover {
+    background-color: var(--blue);
+    color: #fff;
+}
+
+.text-copyright {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: .6rem;
+    color: var(--gray);
+}
+
+
 
