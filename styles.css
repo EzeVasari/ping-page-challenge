@@ -59,15 +59,20 @@ main {
     font-size: .65rem;
 }
 
-input {
+.input {
     width: 90%;
+    margin: 0 auto;
+}
+
+input {
+    width: 100%;
     padding: .6rem;
     padding-left: 1rem;
     color: black;
     font-size: .6rem;
     font-family: var(--font-family);
     outline: none;
-    border: 1px solid var(--pale-blue);
+    border: 1px solid hsl(0, 0%, 80%);
     border-radius: 25px;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
@@ -76,8 +81,8 @@ input {
 }
 
 input::placeholder {
-    color: var(--pale-blue);
-    font-size: .6rem;
+    color: hsl(0, 0%, 80%);
+    font-size: .65rem;
     font-family: var(--font-family);
 }
 
@@ -97,7 +102,7 @@ input::placeholder {
 }
 
 .btn-input {
-    width: 90%;
+    width: 100%;
     margin-top: .5rem;
     padding: .6rem;
     background-color: var(--blue);
@@ -160,5 +165,144 @@ input::placeholder {
     color: var(--gray);
 }
 
+@media (min-width: 576px) {
+    .logo {
+        width: 15%;
+    }
 
+    .input {
+        width: 75%;
+    }
+
+    .text-error {
+        font-size: .6rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .logo {
+        width: 12%;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: .8rem;
+    }
+    
+    .input {
+        width: 70%;
+    }
+
+    .img-illustration {
+        width: 80%;
+    }
+
+    input {
+        font-size: .7rem;
+    }
+
+    .text-error {
+        font-size: .6rem;
+    }
+
+    .btn-input {
+        font-size: .7rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .logo {
+        width: 8%;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .subtitle {
+        font-size: .9rem;
+    }
+    
+    .input {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .div-input {
+        width: 65%;
+        margin-right: 2%;
+    }
+
+    .div-btn {
+        width: 35%;
+    }
+
+    .btn-input {
+        margin-top: 0;
+    }
+
+    .img-illustration {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .logo {
+        width: 6%;
+    }
+
+    .input {
+        width: 40%;
+    }
+
+    .div-input {
+        width: 60%;
+        margin-right: 2%;
+    }
+
+    .div-btn {
+        width: 30%;
+    }
+
+    .btn-input {
+        font-size: 0.6rem;
+        height: 100%;
+    }
+
+    .img-illustration {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .logo {
+        width: 4%;
+    }
+
+    .input {
+        width: 35%;
+    }
+
+    .div-input {
+        width: 55%;
+        margin-right: 2%;
+    }
+
+    .div-btn {
+        width: 25%;
+    }
+
+    .btn-input {
+        font-size: 0.6rem;
+        height: 100%;
+    }
+
+    .img-illustration {
+        width: 35%;
+    }
+}
 
