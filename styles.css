@@ -120,6 +120,10 @@ input::placeholder {
     -o-border-radius: 25px;
 }
 
+.btn-input:hover {
+    background-color: hsl(222, 90%, 80%);;
+}
+
 .illustration {
     margin-top: 3.5rem;
 }
