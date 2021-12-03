@@ -26,3 +26,20 @@ body {
     margin: 0;
     overflow-x: hidden;
 }
+
+main {
+    min-height: 100vh;
+    padding: 2rem;
+    text-align: center;
+    color: var(--dark-blue);
+}
+
+.title {
+    color: var(--gray);
+}
+
+.title span {
+    color: var(--dark-blue);
+    font-weight: 600;
+}
+
